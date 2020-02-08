@@ -35,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://f35f918b0e1867334a97861f223b36075b943f45@github.com/luke2327/luke2327-blog.git",
+  "author": "luke2327 <qwepoi8526@gmail.com>",
+  "license": "MIT"
 }
