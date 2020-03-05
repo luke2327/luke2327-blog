@@ -108,13 +108,24 @@ var _jsxFileName = "/Users/luke2327/git/luke2327-blog/pages/index.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-const Home = () => __jsx("h1", {
+const Home = ({
+  userAgent
+}) => __jsx("h1", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1
   },
   __self: undefined
-}, "Hello");
+}, "user agent: ", userAgent);
+
+Home.getInitialProps = async ({
+  req
+}) => {
+  const userAgent = req ? req.headers['user-agent'] : navigator.userAgent;
+  return {
+    userAgent
+  };
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
